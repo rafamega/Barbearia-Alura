@@ -1,3 +1,12 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contato {
+	width: 940px;
+	margin: 0 auto;
+}
+
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
@@ -90,11 +99,6 @@ footer {
 	margin-top: 20px;
 }
 
-main {
-	width: 940px;
-	margin: 0 auto;
-}
-
 form {
 	margin: 40px 0;
 }
@@ -148,4 +152,137 @@ thead {
 td, th {
 	border: 1px solid #000;
 	padding: 8px 15px;
+}
+
+/* css da página inicial */
+
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left; /* limpa o float da imagem daqui pra baixo */
+}
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p {
+	margin: 0 0 1em;
+	text-align: justify;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+	border-radius: 4px;
+	opacity: 0.93;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888);
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+.mapa p {
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.itens {
+	line-height: 1.5em;
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "\272F"; /* estrelinha em unicode */
+	margin-right: 0.5em;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.imagem-beneficios {
+	width: 60%;
+	box-shadow: 10px 10px 8px 0 #000;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+/* Responsividade */
+
+@media (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+		text-align: center;
+	}
+
+	.principal {
+		padding: 1em;
+	}
+
+	.titulo-principal {
+		margin: 0 0 0.5em 0;
+	}
+
+	.mapa {
+		padding:0 1em;
+	}
+
+	.beneficios {
+		padding: 1em;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
 }
